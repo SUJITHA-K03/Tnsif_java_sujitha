@@ -2,33 +2,43 @@ package entityclass;
 
 public class Customerdemo  {
 
-	private String Cname;
-	private String city;
+	//Program to demonstrate simple class in Java
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-        Customerdemo c1=new Customerdemo();
-        c1.setCname("suji");
-        c1.setCity("villupuram");
-        System.out.println(getCname);  
-        
-        
-	}
+		// Var declaration / Data members
+		private int serialNum; // int, string, boolean, float = Primitive Data types
+		private String name; // private , public, protected and default = Access modifiers / specifiers
+		private int age;
 
-	public String getCname() {
-		return Cname;
-	}
+		// Getters and Setters method
+		
+		// Object class method - to returns string representation of the object
+		@Override
+		public String toString() {
+			return "OopsConceptDemo [Serial Number=" + serialNum + ", name=" + name + ", age=" + age + "]";
+		}
 
-	public void setCname(String cname) {
-		Cname = cname;
-	}
+		public int getSerialNum() {
+			return serialNum;
+		}
 
-	public String getCity() {
-		return city;
-	}
+		public void setSerialNum(int serialNum) {
+			this.serialNum = serialNum; // this is the keyword which request to the current object
+		}
 
-	public void setCity(String city) {
-		this.city = city;
+		public String getName() {
+			return name;
+		}
+
+		public void setName(String name) {
+			this.name = name;
+		}
+
+		public int getAge() {
+			return age;
+		}
+
+		public void setAge(int age) {
+			this.age = age;
+		}
+
 	}
- 
-}
